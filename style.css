@@ -5,7 +5,7 @@
  */
 html {
   /* Give our document a fake height for demo purposes. */
-	height: 1500px;
+	height: 300vh;
   /* We must set out root `font-size` to 0 to prevent our parallax margins being calculated */
   font-size: 0;
 	}
@@ -54,39 +54,51 @@ h1 {
   margin-right: 18.5rem;
 }
 
-.skyline, .blimp, .gherkin, .bull, .dino{
+.section-1{
+    position: relative;
+    
+    height: 50vh;
+    width: 100vw;
+}
+
+.skyline, .blimp, .gherkin, .bull, .dino, .skyline-2, .blimp-2, .gherkin-2, .bull-2, .dino-2{
+    position: absolute;
     height: 100px;
     width: 100px;
     
-    background: rgba(155,2,2,1);
+    background: rgba(155,2,2,.6);
 }
 
-.skyline {
+.skyline-2, .blimp-2, .gherkin-2, .bull-2, .dino-2{
+     background: rgba(2,2,155,.5);   
+}
+
+.skyline, .skyline-2 {
 	top: 50vh;
 	margin-top: -28rem;
 	left: 8%;
 }
 
-.blimp {
+.blimp, .blimp-2 {
 	top: 80vh;
 	margin-top: -55rem;
 	left: 24%;
 }
 
-.gherkin {
+.gherkin, .gherkin-2 {
 	top: 40vh;
 	margin-top: -20rem;
 	left: 40%;
 	z-index: 10;
 }
 
-.bull {
+.bull, .bull-2 {
 	top: 70vh;
 	margin-top: -47rem;
 	left: 56%;
 }
 
-.dino {
+.dino, .dino-2 {
 	top: 60vh;
 	margin-top: -33rem;
 	left: 72%;
