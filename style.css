@@ -1,3 +1,36 @@
+@keyframes moving{
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(25vh);
+    
+    }
+    
+    100%{
+        transform:  translateY(0);
+    }
+    
+}
+
+
+-webkit-@keyframes moving{
+      0%{
+        transform: translateY(0);
+    }
+    
+     50%{
+        transform: translateY(25vh);
+    
+    }
+    
+    100%{
+        transform:  translateY(0);
+    }
+
+}
+
 /**
  * Parallax styles
  *
@@ -67,6 +100,9 @@ h1 {
     width: 100px;
     
     background: rgba(155,2,2,.6);
+    
+    -webkit-animation: moving 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: moving 5s infinite;
 }
 
 .skyline-2, .blimp-2, .gherkin-2, .bull-2, .dino-2{
